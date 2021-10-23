@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TblItemService extends Migration
+class TblProduk extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class TblItemService extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_item_service', function (Blueprint $table) {
+        Schema::create('tbl_produk', function (Blueprint $table) {
             $table -> id();
-            $table -> char('kd_item', 50);
-            $table -> char('nama_item', 20);
+            $table -> char('kd_produk', 50);
+            $table -> char('nama_produk', 20);
             $table -> text('deskripsi') -> nullable();
             $table -> char('kategori', 3);
+            $table -> char('satuan', 100);
             $table -> integer('harga'); 
             $table -> char('active', 1);
         });
@@ -31,6 +32,6 @@ class TblItemService extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbl_item_service');
+        Schema::dropIfExists('tbl_produk');
     }
 }
