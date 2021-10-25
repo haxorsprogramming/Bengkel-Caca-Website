@@ -1,43 +1,46 @@
 // route 
-var rToLogin = server + 'login/proses';
-var rToDashboard = server + 'dashboard/';
+const r_to_login_proses = server + "/auth/login/proses";
+const r_to_dashboard = server + "/app";
 
 // vue object 
-var loginApp = new Vue({
-  el : '#login-app',
+var app_utama = new Vue({
+  el : '#login_app',
   data : {
 
   },
   methods : {
-    loginAtc : function()
+    login_atc : function()
     {
-      let username = document.querySelector('#txtUsername').value;
-      let password = document.querySelector('#txtPassword').value;
-      let ds = {'username':username, 'password':password}
-      $.post(rToLogin, ds, function(data){
-        let ds = data;
-        if(ds.status === 'wrong_password'){
-          pesanUmumApp('warning', 'Invalid login', 'Password salah !!!');
-        }else if(ds.status === 'no_user'){
-          pesanUmumApp('warning', 'Invalid login', 'Username tidak terdaftar !!!');
-        }else{
-          window.location.assign(rToDashboard);
-        }
-      });
+      login_proses();
     }
   }
 });
 
-// function 
-const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+// function
+document.querySelector("#txt_username").focus();
 
-$.ajaxSetup({
-  headers: {
-      'X-CSRF-TOKEN': csrftoken
+$.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
+
+function login_proses()
+{
+  let username = document.querySelector('#txt_username').value;
+  let password = document.querySelector('#txt_password').value;
+  if(username === '' || password === ''){
+    pesanUmumApp('warning', 'Isi field !!!', 'Harap lengkapi field !!!');
+  }else{
+    let ds = {'username':username, 'password':password}
+    axios.post(r_to_login_proses, ds).then(function(res){
+        let dr = res.data;
+        if(dr.status === 'no_user'){
+          pesanUmumApp('warning', 'No user !!!', 'Tidak ada username terdaftar !!!');
+        }else if(dr.status === 'wrong_password'){
+          pesanUmumApp('warning', 'Fail Auth !!!', 'Password salah !!!');
+        }else{
+          window.location.assign(r_to_dashboard);
+        }
+    });
   }
-});
-
-document.querySelector('#txtUsername').focus();
+}
 
 function pesanUmumApp(icon, title, text)
 {
