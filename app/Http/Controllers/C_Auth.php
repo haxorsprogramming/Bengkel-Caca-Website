@@ -8,6 +8,6 @@ class C_Auth extends Controller
 {
     public function login_page()
     {
-        
+        return view('auth.login_page');
     }
 }
