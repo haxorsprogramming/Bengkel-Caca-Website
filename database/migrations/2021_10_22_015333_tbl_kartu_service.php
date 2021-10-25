@@ -13,7 +13,17 @@ class TblKartuService extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('tbl_kartu_service', function (Blueprint $table) {
+            $table -> id();
+            $table -> char('kd_service', 40);
+            $table -> char('member', 200);
+            $table -> dateTime('waktu_registrasi');
+            $table -> dateTime('waktu_service');
+            $table -> dateTime('waktu_selesai');
+            $table -> char('teknisi', 200);
+            $table -> char('status', 50);
+            $table -> char('active', 1);
+        });
     }
 
     /**
@@ -23,6 +33,6 @@ class TblKartuService extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('tbl_kartu_service');
     }
 }

@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\C_Home;
+use App\Http\Controllers\C_Auth;
+
+Route::get('/', [C_Home::class, 'home_page']);
+
+Route::get('/auth', [C_Auth::class, 'login_page']);

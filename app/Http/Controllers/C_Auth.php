@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class C_Home extends Controller
+class C_Auth extends Controller
 {
-    public function home_page()
+    public function login_page()
     {
-        echo "hay";
+        
     }
 }
