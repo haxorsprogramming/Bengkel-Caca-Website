@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TblProduk extends Migration
+class TblKategori extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,12 @@ class TblProduk extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_produk', function (Blueprint $table) {
+        Schema::create('tbl_kategori', function (Blueprint $table) {
             $table -> id();
-            $table -> char('kd_produk', 50);
-            $table -> char('nama_produk', 20);
+            $table -> char('kd_kategori', 50);
+            $table -> char('nama', 100);
             $table -> text('deskripsi') -> nullable();
-            $table -> char('kategori', 3);
-            $table -> char('satuan', 100);
-            $table -> integer('harga'); 
+            $table -> char('tipe', 1); 
             $table -> char('active', 1);
         });
     }
@@ -32,6 +30,6 @@ class TblProduk extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbl_produk');
+        Schema::dropIfExists('tbl_kategori');
     }
 }

@@ -18,6 +18,7 @@ class TblItemService extends Migration
             $table -> char('kd_item', 50);
             $table -> char('nama_item', 20);
             $table -> text('deskripsi') -> nullable();
+            $table -> char('tipe', 1);
             $table -> char('kategori', 3);
             $table -> integer('harga'); 
             $table -> char('active', 1);

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\M_Kategori;
+
 class C_Dashboard extends Controller
 {
     public function dashboard_page()
