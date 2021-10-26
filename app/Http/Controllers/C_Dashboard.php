@@ -8,6 +8,6 @@ class C_Dashboard extends Controller
 {
     public function dashboard_page()
     {
-        echo "Halaman apps";
+        return view('dashboard.dashboard_page');
     }
 }
