@@ -14,27 +14,25 @@
        
         <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
             <li class="no-padding active"><a class="waves-effect waves-grey active" href="javascript:void(0)" @click="dashboarc_atc()"><i class="material-icons">dashboard</i>Dashboard</a></li>
-            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">analytics</i>Monitoring PPDB</a></li>
+            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">analytics</i>Monitoring Bengkel</a></li>
             <li class="no-padding">
                 <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">apps</i>Data Master<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                 <div class="collapsible-body">
                     <ul>
-                        <li><a href="javascript:void(0)">Periode PPDB</a></li>
-                        <li><a href="javascript:void(0)">Jalur Pendaftaran</a></li> 
-                        <li><a href="javascript:void(0)" @click="tahun_ajaran_atc()">Tahun Ajaran</a></li>
-                        <li><a href="javascript:void(0)">Jurusan</a></li>
-                        <li><a href="javascript:void(0)">Mapel Seleksi</a></li>
-                        <li><a href="javascript:void(0)">Bobot Sertifikat</a></li>
+                        <li><a href="javascript:void(0)">Member</a></li>
+                        <li><a href="javascript:void(0)">Service Item</a></li> 
+                        <li><a href="javascript:void(0)">Produk Item</a></li>
+                        <li><a href="javascript:void(0)">Kategori</a></li>
+                        <li><a href="javascript:void(0)">Pegawai</a></li>
                     </ul>
                 </div>
             </li>
             <li class="no-padding">
-                <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">school</i>Data PPDB<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">school</i>Laporan<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                 <div class="collapsible-body">
                     <ul>
-                        <li><a href="javascript:void(0)">Data Registrasi</a></li>
-                        <li><a href="javascript:void(0)">Data Verifikasi</a></li> 
-                        <li><a href="javascript:void(0)">Hasil PPDB</a></li>
+                        <li><a href="javascript:void(0)">Laporan Bengkel</a></li>
+                        <li><a href="javascript:void(0)">Arus Kas</a></li>
                     </ul>
                 </div>
             </li>

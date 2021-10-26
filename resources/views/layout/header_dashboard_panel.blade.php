@@ -4,7 +4,7 @@
 <head>
 
     <!-- Title -->
-    <title>Panel Admin - Nadha PPDB</title>
+    <title>Bengkel Caca - Dashboard</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta charset="UTF-8">
@@ -22,14 +22,6 @@
     <!-- Theme Styles -->
     <link href="{{ asset('/ladun/alpha') }}/css/alpha.min.css" rel="stylesheet" type="text/css" />
     <link href="{{ asset('/ladun/alpha') }}/css/custom.css" rel="stylesheet" type="text/css" />
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
 </head>
 
@@ -93,7 +85,7 @@
                         </a>
                     </section>
                     <div class="header-title col s3 m3">
-                        <span class="chapter-title">Nadha PPDB - Nadha School Apps</span>
+                        <span class="chapter-title">Bengkel Caca - Dashboard</span>
                     </div>
                     
                     <ul class="right col s9 m3 nav-right-menu">
