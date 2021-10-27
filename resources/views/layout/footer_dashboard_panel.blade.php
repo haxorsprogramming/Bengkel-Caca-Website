@@ -8,7 +8,7 @@
             <a class="footer-text" href="javascript:void()">
                 <span class="direction">Nadha School (PPDB Apps)</span>
                 <div>
-                    aa
+                    @{{page_title}}
                 </div>
             </a>
         </div>

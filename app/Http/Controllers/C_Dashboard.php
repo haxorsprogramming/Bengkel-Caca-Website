@@ -12,4 +12,8 @@ class C_Dashboard extends Controller
     {
         return view('dashboard.dashboard_page');
     }
+    public function beranda_page()
+    {
+        echo "Halaman beranda";
+    }
 }
