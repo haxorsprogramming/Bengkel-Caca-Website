@@ -17,3 +17,6 @@ Route::get('/app/beranda', [C_Dashboard::class, 'beranda_page']);
 
 // testing 
 // Route::get('/app/tes-kategori', [C_Dashboard::class, 'kategori_temp']);
+
+// api 
+Route::post('/testing-api/get-kategori', [C_Dashboard::class, 'tes_api']);

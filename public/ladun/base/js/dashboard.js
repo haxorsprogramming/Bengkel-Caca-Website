@@ -1,6 +1,6 @@
 // route 
 var r_beranda = server + "app/beranda";
-
+var r_test_bearer = "http://localhost/Bengkel-Caca-Website/public/testing-api/get-kategori";
 // vue object 
 var div_menu = new Vue({
     el : '#slide-out',
@@ -11,6 +11,17 @@ var div_menu = new Vue({
         dashboarc_atc : function()
         {
             load_page(r_beranda, 'Dashboard');
+        },
+        test_bearer : function()
+        {
+            let ds = {'nama':'Bengkel Caca'}
+            axios.post(r_test_bearer, ds,{
+                headers : {
+                    Authorization : 'Bearer l0XcaMCkiBD3m5cVh3rYXUmWWwDfhDD1FPTOfpcN'
+                }
+            }).then(function(res){
+                console.log(res.data);
+            });
         }
     }
 });
@@ -38,6 +49,7 @@ async function load_page(page, page_title)
 {
     footer_app.page_title = page_title;
     NProgress.start();
+    document.querySelector("#div_utama").innerHTML = "<div style='text-align:center;width:100%;margin-top:40px;font-size:20px;'>Memuat halaman ...</div>";
     await tidur_bentar(1000);
     $("#div_utama").load(page);
     NProgress.done();

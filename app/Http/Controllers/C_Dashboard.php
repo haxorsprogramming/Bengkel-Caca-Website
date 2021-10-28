@@ -14,6 +14,12 @@ class C_Dashboard extends Controller
     }
     public function beranda_page()
     {
-        echo "Halaman beranda";
+        return view('dashboard.beranda_page');
+    }
+    public function tes_api(Request $request)
+    {
+        $key = $request -> header('Authorization');
+        $dr = ['key' => $key];
+        return \Response::json($dr);
     }
 }
