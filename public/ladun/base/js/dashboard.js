@@ -1,5 +1,6 @@
 // route 
 var r_beranda = server + "app/beranda";
+var r_member = server + "app/member";
 var r_test_bearer = "http://localhost/Bengkel-Caca-Website/public/testing-api/get-kategori";
 // vue object 
 var div_menu = new Vue({
@@ -11,6 +12,10 @@ var div_menu = new Vue({
         dashboarc_atc : function()
         {
             load_page(r_beranda, 'Dashboard');
+        },
+        member_atc : function()
+        {
+            load_page(r_member, 'Member');
         }
     }
 });

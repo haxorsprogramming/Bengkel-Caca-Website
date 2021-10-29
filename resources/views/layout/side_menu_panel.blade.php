@@ -19,7 +19,7 @@
                 <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">apps</i>Data Master<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                 <div class="collapsible-body">
                     <ul>
-                        <li><a href="javascript:void(0)">Member</a></li>
+                        <li><a href="javascript:void(0)" @click="member_atc()">Member</a></li>
                         <li><a href="javascript:void(0)">Service Item</a></li> 
                         <li><a href="javascript:void(0)">Produk Item</a></li>
                         <li><a href="javascript:void(0)">Kategori</a></li>
