@@ -32,7 +32,7 @@
                 <div class="collapsible-body">
                     <ul>
                         <li><a href="javascript:void(0)">Laporan Bengkel</a></li>
-                        <li><a href="javascript:void(0)" @click="test_bearer()">Arus Kas</a></li>
+                        <li><a href="javascript:void(0)">Arus Kas</a></li>
                     </ul>
                 </div>
             </li>

@@ -11,17 +11,6 @@ var div_menu = new Vue({
         dashboarc_atc : function()
         {
             load_page(r_beranda, 'Dashboard');
-        },
-        test_bearer : function()
-        {
-            let ds = {'nama':'Bengkel Caca'}
-            axios.post(r_test_bearer, ds,{
-                headers : {
-                    Authorization : 'Bearer l0XcaMCkiBD3m5cVh3rYXUmWWwDfhDD1FPTOfpcN'
-                }
-            }).then(function(res){
-                console.log(res.data);
-            });
         }
     }
 });

@@ -18,7 +18,7 @@ class C_Dashboard extends Controller
     }
     public function tes_api(Request $request)
     {
-        $key = $request -> header('Authorization');
+        $key = $request->bearerToken();
         $dr = ['key' => $key];
         return \Response::json($dr);
     }
