@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class M_Profile_Member extends Model
 {
-    use HasFactory;
+    protected $table = "tbl_profile_member";
 }

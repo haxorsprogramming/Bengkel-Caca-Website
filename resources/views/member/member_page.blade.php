@@ -3,6 +3,7 @@
         <div class="card" id="d_data_tahun_ajaran">
             <div class="card-content">
                 <span class="card-title">Daftar member bengkel</span>
+                <a href="#!" class="btn">Tambah member baru</a>
                 <table id="tbl_member" class="display responsive-table datatable-example">
                     <thead>
                         <tr>

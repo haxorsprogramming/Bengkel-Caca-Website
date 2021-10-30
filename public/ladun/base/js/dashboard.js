@@ -16,6 +16,10 @@ var div_menu = new Vue({
         member_atc : function()
         {
             load_page(r_member, 'Member');
+        },
+        statistik_atc : function()
+        {
+            
         }
     }
 });
