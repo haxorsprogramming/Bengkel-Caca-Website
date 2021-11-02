@@ -22,4 +22,4 @@ Route::post('/app/member/tambah/proses', [C_Member::class, 'proses_tambah_member
 // Route::get('/app/tes-kategori', [C_Dashboard::class, 'kategori_temp']);
 
 // api 
-Route::post('/testing-api/get-kategori', [C_Dashboard::class, 'tes_api']);
+Route::get('/testing-api/get-provinsi', [C_Dashboard::class, 'tes_provinsi']);

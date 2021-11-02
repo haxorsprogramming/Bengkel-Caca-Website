@@ -3,7 +3,7 @@
         <div class="card" id="d_member">
             <div class="card-content">
                 <span class="card-title">Daftar member bengkel</span>
-                <a href="#!" class="waves-effect waves-light btn" @click="tambah_member_atc()"><i class="material-icons left">cloud</i>Tambah member baru</a>
+                <a href="#!" class="waves-effect waves-light btn" @click="tambah_member_atc()"><i class="material-icons left">add_circle_outline</i>Tambah member baru</a>
                 <hr />
                 <table id="tbl_member" class="display responsive-table datatable-example">
                     <thead>
@@ -39,8 +39,8 @@
                                 <label for="txt_tanggal_lahir" class="active">Tanggal Lahir</label>
                             </div>
                             <div class="input-field col s12">
-                                <input placeholder="Nama" id="txt_nama_member" type="text" class="validate">
-                                <label for="txt_nama_member" class="active">Email</label>
+                                <input placeholder="Email" id="txt_email" type="text" class="validate">
+                                <label for="txt_email" class="active">Email</label>
                             </div>
                             <a href="#!" class="btn" @click="simpan_member_atc()">Tambah member baru</a>
                         </div>

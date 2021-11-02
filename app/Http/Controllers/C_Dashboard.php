@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\M_Kategori;
+use App\Models\M_Provinsi;
 
 class C_Dashboard extends Controller
 {
@@ -16,10 +17,9 @@ class C_Dashboard extends Controller
     {
         return view('dashboard.beranda_page');
     }
-    public function tes_api(Request $request)
+    public function tes_provinsi()
     {
-        $key = $request -> bearerToken();
-        $dr = ['key' => $key];
-        return \Response::json($dr);
+        $provinsi = M_Provinsi::all();
+        dd($provinsi);
     }
 }
