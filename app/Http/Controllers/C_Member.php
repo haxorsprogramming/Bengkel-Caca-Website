@@ -14,4 +14,8 @@ class C_Member extends Controller
         $dr = ['data_member' => $data_member];
         return view('member.member_page', $dr);
     }
+    public function proses_tambah_member(Request $request)
+    {
+        
+    }
 }

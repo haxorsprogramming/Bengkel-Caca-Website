@@ -9,7 +9,11 @@ var app_member = new Vue({
         {
             $('#d_member').hide();
             $("#d_form_tambah_member").show();
-            document.querySelector("#txt_nama_member").focus();
+            document.querySelector("#txt_username").focus();
+        },
+        simpan_member_atc : function()
+        {
+            console.log("Haloo");
         }
     }
 });

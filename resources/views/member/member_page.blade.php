@@ -27,9 +27,22 @@
                     <form class="col s6">
                         <div class="row">
                             <div class="input-field col s12">
+                                <input placeholder="Username" id="txt_username" type="text" class="validate">
+                                <label for="txt_username" class="active">Username</label>
+                            </div>
+                            <div class="input-field col s12">
                                 <input placeholder="Nama" id="txt_nama_member" type="text" class="validate">
                                 <label for="txt_nama_member" class="active">Nama Member</label>
                             </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Tanggal Lahir" id="txt_tanggal_lahir" type="date" class="validate">
+                                <label for="txt_tanggal_lahir" class="active">Tanggal Lahir</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Nama" id="txt_nama_member" type="text" class="validate">
+                                <label for="txt_nama_member" class="active">Email</label>
+                            </div>
+                            <a href="#!" class="btn" @click="simpan_member_atc()">Tambah member baru</a>
                         </div>
                     </form>
                 </div>
