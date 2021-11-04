@@ -42,15 +42,14 @@
                                 <input placeholder="Email" id="txt_email" type="text" class="validate">
                                 <label for="txt_email" class="active">Email</label>
                             </div>
-                            <div class="input-field col s12">
+                            <div class="input-field col s12" style="margin-bottom: 25px;">
                                 <label for="txt_provinsi" class="active">Provinsi</label>
                                 <select class="browser-default" id="txt_provinsi" name="txt_provinsi" style="margin-top: 10px;">
-                                    @foreach($data_provinsi as $provinsi)
-                                        <option>{{ $provinsi -> nama }}</option>
-                                    @endforeach
+                                        <option>Provinsi</option>
                                 </select>
                             </div>
-                            <a href="#!" class="btn" @click="simpan_member_atc()">Tambah member baru</a>
+                            
+                            <a href="#!" class="btn" @click="simpan_member_atc()">Tambah member baru</a>                            
                         </div>
                     </form>
                 </div>

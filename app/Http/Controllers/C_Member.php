@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\M_Profile_Member;
-use App\Http\Controllers\C_Helper;
+
 
 class C_Member extends Controller
 {

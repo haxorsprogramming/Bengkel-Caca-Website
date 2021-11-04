@@ -1,3 +1,6 @@
+// route 
+var r_get_provinsi = server + "daerah/get-provinsi/all";
+
 // vue object 
 var app_member = new Vue({
     el : '#app_member',
