@@ -45,7 +45,7 @@
                             <div class="input-field col s12" style="margin-bottom: 25px;">
                                 <label for="txt_provinsi" class="active">Provinsi</label>
                                 <select class="browser-default" id="txt_provinsi" name="txt_provinsi" style="margin-top: 10px;">
-                                        <option>Provinsi</option>
+                                        <option v-for="prov in provinsi" v-bind:value="prov.id_prov">@{{ prov.nama }}</option>
                                 </select>
                             </div>
                             
